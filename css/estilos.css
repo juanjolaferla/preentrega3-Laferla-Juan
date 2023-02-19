@@ -1,4 +1,4 @@
-/*nesting*/ /*nesting*/
+/*nesting*/
 * {
   margin: 0%;
   padding: 0%;
@@ -11,13 +11,9 @@
   font-size: 40px;
 }
 
-.bag {
+.bi {
   display: inline-block;
-  font-size: 25px;
-}
-
-.d-block {
-  width: 70%;
+  font-size: 30px;
 }
 
 /*Carrusel*/
@@ -35,8 +31,7 @@
   height: auto;
   background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
 }
-
-.descuento {
+.descuento-flex .descuento {
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -51,8 +46,7 @@
   text-align: center;
   margin: 100px;
 }
-
-.news {
+.container-news .news {
   border: black solid 2px;
   width: 600px;
   height: 100px;
@@ -70,13 +64,11 @@
   margin-top: 100px;
   text-align: center;
 }
-
-.shoe {
-  width: 400px;
-}
-
-.shoes {
+.shop .shoes {
   margin: 20px;
+}
+.shop .shoes .shoe {
+  width: 400px;
 }
 
 .shoe-zap1 {
@@ -90,8 +82,10 @@
 }
 
 button {
+  width: 100px;
   background: black;
   color: white;
+  border-radius: 25px;
 }
 
 button:hover {
@@ -101,20 +95,19 @@ button:hover {
 }
 
 /*Pie de pagina*/
+.copy {
+  text-align: center;
+}
+
 .redes {
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
-
-.bi {
+.redes .bi {
   font-size: 40px;
   color: rgb(53, 52, 52);
   margin: 20px;
-}
-
-.copy {
-  text-align: center;
 }
 
 /*Responsive*/
