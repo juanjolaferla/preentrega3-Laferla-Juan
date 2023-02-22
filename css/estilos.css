@@ -1,17 +1,170 @@
-/* Error: Expected digit.
- *    ,
- * 87 |     width: 100px.;
- *    |                  ^
- *    '
- *   scss\estilos.scss 87:18  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a    \2577 \a 87 \2502      width: 100px.;\d\a    \2502                   ^\a    \2575 \a   scss\\estilos.scss 87:18  root stylesheet";
+/*nesting*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
+
+/*Estilo Navbar*/
+.nav-link {
+  font-size: 40px;
+}
+
+.bi {
+  display: inline-block;
+  font-size: 30px;
+}
+
+/*Carrusel*/
+.carrusel {
+  margin-top: 60px;
+}
+
+/*seccion descuntos*/
+.descuento-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  width: auto;
+  height: auto;
+  background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+}
+.descuento-flex .descuento {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+/*Seccion News*/
+.container-news {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+}
+.container-news .news {
+  border: black solid 2px;
+  width: 600px;
+  height: 100px;
+  justify-content: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/*Catalogo Man*/
+.shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: center;
+}
+.shop .shoes {
+  margin: 20px;
+}
+.shop .shoes .shoe {
+  width: 400px;
+}
+
+.shoe-zap1 {
+  width: 400px;
+  padding-top: 100px;
+}
+
+.shoe-zap6 {
+  width: 400px;
+  margin-top: 50px;
+}
+
+button {
+  width: 100px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+/*catalogo woman*/
+.shop-grid {
+  display: grid;
+  width: 100%;
+  margin-top: 30px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  align-items: end;
+}
+.shop-grid .shoes1 {
+  margin: 20px;
+}
+.shop-grid .shoes1 .shoe {
+  width: 400px;
+}
+
+.shop-grid > div {
+  display: inline-block;
+  text-align: center;
+}
+
+/*About us*/
+.container-us {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+}
+
+/*Pie de pagina*/
+.copy {
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.redes .bi {
+  font-size: 40px;
+  color: rgb(53, 52, 52);
+  margin: 20px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .descuento {
+    font-size: 50px;
+  }
+  .redes {
+    justify-content: center;
+  }
+  .news {
+    padding-top: 20px;
+    font-size: 10px;
+  }
+}
+/*responsive grid*/
+@media screen and (max-width: 1230px) {
+  .shop-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -84,7 +84,7 @@
   }
   
   button {
-    width: 100px.;
+    width: 100px;
     background: black;
     color: white;
     border-radius: 25px;
@@ -95,7 +95,33 @@
     color: black;
     border: none; }
 
-  
+   /*catalogo woman*/
+   .shop-grid{
+    display: grid;
+    width: 100%;
+    margin-top: 30px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    align-items: end;
+    .shoes1{
+      margin: 20px;
+      .shoe{
+        width: 400px;
+      }
+    }
+    
+  }
+  .shop-grid > div {
+    display: inline-block;
+    text-align: center;
+
+  }
+  /*About us*/
+  .container-us{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;} 
   /*Pie de pagina*/
   .copy {
     text-align: center;
@@ -127,4 +153,14 @@
       font-size: 10px;
     }
   }
+  /*responsive grid*/
+@media screen and ( max-width: 1230px){
+  .shop-grid{
+      display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: center;
+  }}
   
