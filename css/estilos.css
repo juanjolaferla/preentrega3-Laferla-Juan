@@ -35,7 +35,29 @@
   justify-content: center;
   text-align: center;
   font-size: 100px;
+}
+p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 100px;
   color: white;
+  margin: 0 auto;
+  border-right: 0.15em;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /*Seccion News*/
@@ -53,7 +75,10 @@
   padding: 5px;
   font-size: 20px;
 }
-
+input{
+  border-radius: 25px;
+  text-align: center;
+}
 /*Catalogo Man*/
 .shop {
   display: flex;
@@ -123,28 +148,30 @@ button:hover {
 }
 
 /*Pie de pagina*/
+.pie{
+  display: flex;
+  background-color: black;
+}
 .copy {
   text-align: center;
   color: white;
 }
 
 .redes {
-  display: flex;
   flex-direction: row;
-  justify-content: end;
+  align-items: center;
 }
 .redes .bi {
   font-size: 40px;
   color: white;
   margin: 20px;
-  
+  justify-content: right;
 }
-.pie{
-  background-color: black;
-}
+
 .blanco{
   width: 100px;
   height: 100px;
+  justify-content: center;
   align-items: center;
 }
 /*Responsive*/
