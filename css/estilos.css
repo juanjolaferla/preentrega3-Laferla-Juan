@@ -1,4 +1,3 @@
-/*nesting*/
 * {
   margin: 0%;
   padding: 0%;
@@ -126,6 +125,7 @@ button:hover {
 /*Pie de pagina*/
 .copy {
   text-align: center;
+  color: white;
 }
 
 .redes {
@@ -135,10 +135,18 @@ button:hover {
 }
 .redes .bi {
   font-size: 40px;
-  color: rgb(53, 52, 52);
+  color: white;
   margin: 20px;
+  
 }
-
+.pie{
+  background-color: black;
+}
+.blanco{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
 /*Responsive*/
 @media screen and (max-width: 767px) {
   .navbar-brand {
