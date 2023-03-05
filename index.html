@@ -22,9 +22,13 @@
   <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
       <div class="collapse navbar-collapse" id="navbar-Toggler">
 
         <ul class="navbar-nav d-flex justify-content-center aling-items-center">
@@ -41,10 +45,10 @@
             <a class="nav-link" href="pages/woman.html">Woman</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">About Us</a>
+            <a class="nav-link" href="pages/aboutus.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">News</a>
+            <a class="nav-link" href="pages/shops.html">Shops</a>
           </li>
         </ul>
       </div>
@@ -71,8 +75,8 @@
     <!--Seccion descuento-->
     <div class="descuento-flex">
       <div class="descuento">
-        <p>50% OFF</p>
-        <p>Hasta 3 cuotas sin interes</p>
+        <h2>50% OFF</h2>
+        <h2>Hasta 3 cuotas sin interes</h2>
       </div>
     </div>
   </section>
@@ -80,7 +84,7 @@
   <section class="container-news">
     <div class="news">
       <form>
-        <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
+        <p>SUSCRIBITE A NUESTRO NEWSLETTER</p>
         <img src="../multimedia/img/logo.jpg" alt="">
         <input type="email" placeholder="ejemplo@correo.com"><button class="suscribite">suscribite</button>
       </form>
@@ -88,15 +92,19 @@
   </section>
   <!--Pie de pagina-->
   <footer class="pie">
+    <div class="copy" >
+      <h4>&copy;Juan Laferla -Inmigrante 2023</h4> 
+    </div>
+    <div class="blanco" >
+      <img src="./multimedia/imagenes/logoblanco.svg" alt="">
+    </div>
     <div class="redes">
       <a href="https://www.instagram.com/inmigrantebsas/" target="_blank"><i class="bi bi-instagram"></i></a>
       <a href="https://es-la.facebook.com/juanjo.laferla/" target="_blank"><i class="bi bi-facebook"></i></a>
       <a href="https://api.whatsapp.com/send?phone=1143991412&text=Hola me gustaia hacer una consulta"
         target="_blank"><i class="bi bi-whatsapp"></i></a>
       </div>
-    <img class="blanco" src="./multimedia/imagenes/logoblanco.svg" alt="">
-    <h4 class="copy">&copy;Juan Laferla -Inmigrante 2023</h4> 
-  
+       
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
