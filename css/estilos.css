@@ -243,6 +243,9 @@ footer {
   .letter {
     font-size: 10px;
   }
+  .formulario {
+    font-size: 15px;
+  }
   .blanco {
     display: none;
   }
