@@ -176,7 +176,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 140px;
+  margin-top: 10px;
   justify-content: space-around;
 }
 
@@ -238,7 +238,9 @@ footer {
     justify-content: center;
   }
   .news {
-    padding-top: 20px;
+    padding-top: 5px;
+  }
+  .letter {
     font-size: 10px;
   }
   .blanco {
