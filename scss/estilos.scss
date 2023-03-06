@@ -13,7 +13,16 @@
     display: inline-block;
     font-size: 30px;
 }
-  
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  h1{
+    margin-top: 80px;
+    padding: 50px;
+  }
   /*Carrusel*/
   .carrusel {
     margin-top: 60px;
@@ -33,10 +42,33 @@
         flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 100px;
     color: white;
 }
   }
+  h2 {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 100px;
+    color: white;
+    margin: 0 auto;
+    border-right: 0.15em;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
   
   /*Seccion News*/
   
@@ -55,7 +87,10 @@
 
     }
   }
-  
+  input{
+    border-radius: 25px;
+    text-align: center;
+  }
   /*Catalogo Man*/
     .shop{
     display: flex;
@@ -121,21 +156,77 @@
     justify-content: center;
     text-align: center;
     margin: 100px;} 
+    .us{
+      color: black;
+      font-size: 30px;
+      text-align: center;
+      padding: 20px;
+      margin: 30px;
+    }
+    /*Shops*/
+    .tiendas{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin-top: 140px;
+     justify-content: space-around;
+    }
+    .tienda1{
+      @extend .tiendas;
+      margin-top: 40px;
+    }
+    .alcorta{
+      width: 400px;
+      height: 300px;
+      border: 2px solid black;
+      margin: 40px;
+      padding: 20px;
+      font-size: 30px;
+    }
+    .palermo{
+      @extend .alcorta;
+    }
+    .mapaalcorta{
+      margin: 40px
+    }
+    .mapapalermo{
+      @extend .mapaalcorta;
+    }
+    
+    
+
+
   /*Pie de pagina*/
+  /*variable*/
+  $color: black;
+
+  footer{
+    @if ( $color==black){
+      background-color: black
+    }
+  }
+
   .copy {
     text-align: center;
+    color: white;
   }
   .redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     .bi{
         font-size: 40px;
-    color: rgb(53, 52, 52);
+    color:white;
     margin: 20px;
     }
   }
-  
+  .blanco{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+  }
+  .pie{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
   /*Responsive*/
   @media screen and (max-width: 767px) {
     .navbar-brand {
@@ -151,7 +242,27 @@
       padding-top: 20px;
       font-size: 10px;
     }
+    .blanco{
+      display: none;
+    }
+    .copy{
+      justify-content: center;
+      font-size: 10px;
+    }
+    h2{
+      font-size: 40px;
+    }
+    h4{
+      font-size: 10px;
+    }
+    .bi{
+      font-size: 25px;
+    }
+    .alcorta{
+      font-size: 20px
+    }
   }
+
   /*responsive grid*/
 @media screen and ( max-width: 1230px){
   .shop-grid{
@@ -162,4 +273,21 @@
   margin-top: 100px;
   text-align: center;
   }}
-  
+  /*mixins*/
+  @mixin crearBordes(){
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+  }
+  button{
+    @include crearBordes();
+  }
+  /*maps*/
+  $estilos: (
+    color: black,
+    fuente: 100px,
+  );
+  .descuento{
+    font-size: map-get($map: $estilos, $key:fuente );
+  }

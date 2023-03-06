@@ -6,18 +6,26 @@
 }
 
 /*Estilo Navbar*/
-.nav-link{
-  font-size: 35px;
+.nav-link {
+  font-size: 40px;
 }
-.bag{
+
+.bi {
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   border: none;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
   box-shadow: none;
+}
+
+h1 {
+  margin-top: 80px;
+  padding: 50px;
 }
 
 /*Carrusel*/
@@ -39,8 +47,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 100px;
+  color: white;
 }
+
 h2 {
   width: 0;
   overflow: hidden;
@@ -51,6 +60,7 @@ h2 {
   border-right: 0.15em;
   animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -64,7 +74,6 @@ h2 {
     border-color: transparent;
   }
 }
-
 /*Seccion News*/
 .container-news {
   display: flex;
@@ -80,10 +89,12 @@ h2 {
   padding: 5px;
   font-size: 20px;
 }
-input{
+
+input {
   border-radius: 25px;
   text-align: center;
 }
+
 /*Catalogo Man*/
 .shop {
   display: flex;
@@ -149,9 +160,10 @@ button:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin: 100px;
 }
-.us{
+
+.us {
   color: black;
   font-size: 30px;
   text-align: center;
@@ -159,66 +171,94 @@ button:hover {
   margin: 30px;
 }
 
-/*Pie de pagina*/
-.pie{
-  background-color: black;
+/*Shops*/
+.tiendas, .tienda1 {
   display: flex;
-  flex-direction: ;
-  justify-content:space-around;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 140px;
+  justify-content: space-around;
 }
-.redes{
-  
+
+.tienda1 {
+  margin-top: 40px;
 }
-.bi { 
-  font-size: 40px;
-  color:white;
-  margin: 20px;
+
+.alcorta, .palermo {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 40px;
+  padding: 20px;
+  font-size: 30px;
 }
-.copy{
+
+.mapaalcorta, .mapapalermo {
+  margin: 40px;
+}
+
+/*Pie de pagina*/
+/*variable*/
+footer {
+  background-color: black;
+}
+
+.copy {
   text-align: center;
   color: white;
 }
 
-.blanco{
+.redes .bi {
+  font-size: 40px;
+  color: white;
+  margin: 20px;
+}
+
+.blanco {
   width: 100px;
   height: 100px;
   margin-top: 30px;
+}
 
+.pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*Responsive*/
-@media screen and (max-width: 767px) 
-{
+@media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
   .descuento {
-    font-size: 30px;
+    font-size: 50px;
   }
   .redes {
     justify-content: center;
-    font-size: 30px;
   }
   .news {
     padding-top: 20px;
     font-size: 10px;
   }
-  .blanco{
+  .blanco {
     display: none;
   }
-  .copy{
+  .copy {
     justify-content: center;
     font-size: 10px;
   }
-  h2{
+  h2 {
     font-size: 40px;
   }
-  h4{
+  h4 {
     font-size: 10px;
   }
-  .bi{
+  .bi {
     font-size: 25px;
+  }
+  .alcorta, .palermo {
+    font-size: 20px;
   }
 }
 /*responsive grid*/
@@ -231,6 +271,18 @@ button:hover {
     margin-top: 100px;
     text-align: center;
   }
+}
+/*mixins*/
+button {
+  width: 100px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+}
+
+/*maps*/
+.descuento {
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
